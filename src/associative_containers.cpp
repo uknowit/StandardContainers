@@ -70,6 +70,14 @@ void AssociativeContainer::associative_container_usage()
 	{
 		std::cout<<set_tra.label<<"::"<<set_tra.value<<std::endl;
 	}
+	std::cout<<un_my_set.load_factor()<<":"<<un_my_set.max_load_factor()<<std::endl;
+	for(int index = 0; index < un_my_set.bucket_count(); index++ )
+	 std::cout<<un_my_set.bucket_count()<<":Index"<<index<<":"<<un_my_set.bucket_size(index)<<std::endl;
+
+	std::cout<<"============"<<std::endl;
+
+
 }
+
 
 
